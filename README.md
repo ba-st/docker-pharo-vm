@@ -15,6 +15,12 @@ on top of Debian 11.
 - [Report a defect](https://github.com/ba-st/docker-pharo-vm/issues/new?labels=Type%3A+Defect)
 - [Request a feature](https://github.com/ba-st/docker-pharo-vm/issues/new?labels=Type%3A+Feature)
 
+## Quick start
+
+```bash
+docker run -it ghcr.io/ba-st/pharo-vm:release-candidate pharo --version
+```
+
 ## License
 
 - The code is licensed under [MIT](LICENSE).

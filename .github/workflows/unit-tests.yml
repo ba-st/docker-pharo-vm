@@ -8,4 +8,5 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Run tests using Docker
-        run: .docker/docker-tests.sh
+        working-directory: .docker
+        run: ./docker-tests.sh
