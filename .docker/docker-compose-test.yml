@@ -1,0 +1,11 @@
+version: '3.4'
+services:
+  sut:
+    build:
+      context: ../source
+      target: vm
+    command: pharo --version
+    ulimits:
+      rtprio:
+        soft: 2
+        hard: 2

@@ -1,2 +1,25 @@
-# docker-pharo-vm
-Docker image for Pharo VM
+# Docker image for Pharo VM
+
+Docker image for running a headless [Pharo VM](https://github.com/pharo-project/opensmalltalk-vm)
+on top of Debian 11.
+
+[![Unit Tests](https://github.com/ba-st/docker-pharo-vm/actions/workflows/unit-tests.yml/badge.svg)](https://github.com/ba-st/docker-pharo-vm/actions/workflows/unit-tests.yml/badge.svg)
+[![Docker Build](https://github.com/ba-st/docker-pharo-vm/actions/workflows/docker-build.yml/badge.svg)](https://github.com/ba-st/docker-pharo-vm/actions/workflows/docker-build.yml)
+[![Markdown Lint](https://github.com/ba-st/docker-pharo-vm/actions/workflows/markdown-lint.yml/badge.svg)](https://github.com/ba-st/docker-pharo-vm/actions/workflows/markdown-lint.yml)
+
+[![GitHub release](https://img.shields.io/github/release/ba-st/docker-pharo-vm.svg)](https://github.com/ba-st/docker-pharo-vm/releases/latest)
+
+## Quick links
+
+- [**Explore the docs**](docs/README.md)
+- [Report a defect](https://github.com/ba-st/docker-pharo-vm/issues/new?labels=Type%3A+Defect)
+- [Request a feature](https://github.com/ba-st/docker-pharo-vm/issues/new?labels=Type%3A+Feature)
+
+## License
+
+- The code is licensed under [MIT](LICENSE).
+- The documentation is licensed under [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/).
+
+## Contributing
+
+Check the [Contribution Guidelines](CONTRIBUTING.md)
