@@ -12,7 +12,7 @@ You can report issues [here](https://github.com/ba-st/docker-pharo-vm/issues/new
 
 - This project is MIT licensed, so any code contribution MUST be under the same license.
 - This project will shadow the official releases of the [Pharo VM](https://github.com/pharo-project/opensmalltalk-vm/releases).
-- The build directives are hosted in this repository using in the `source` folder.
+- The build directives are hosted in this repository in the `source` folder.
 - The `release-candidate` branch contains the latest changes and should always
   be in a releasable state.
 - Feel free to send pull requests or fork the project.
