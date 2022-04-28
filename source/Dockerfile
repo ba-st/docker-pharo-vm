@@ -21,7 +21,7 @@ RUN set -eu; \
   apt-get clean; \
   useradd --uid 7431 --gid 100 --home-dir /opt/pharo --no-create-home --no-user-group pharo; \
   rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*; \
-  printf '#!/usr/bin/env bash\n/opt/pharo/vm/pharo --headless "$@"' > /opt/pharo/pharo-vm; \
+  printf '#!/usr/bin/env bash\nexec /opt/pharo/vm/pharo --headless "$@"' > /opt/pharo/pharo-vm; \
   ln -s /opt/pharo/pharo-vm /usr/local/bin/pharo-vm; \
   chmod a+x /usr/local/bin/pharo-vm; \
   chown 7431:100 /opt/pharo -R; \
