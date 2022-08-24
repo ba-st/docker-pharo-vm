@@ -2,7 +2,7 @@
 FROM alpine:3.12 as download-vm
 RUN apk add unzip
 WORKDIR /tmp/pharo-vm
-ADD https://files.pharo.org/vm/pharo-spur64-headless/Linux-x86_64/PharoVM-9.0.14-93600e1-Linux-x86_64-bin.zip ./PharoVM.zip
+ADD https://files.pharo.org/vm/pharo-spur64-headless/Linux-x86_64/PharoVM-9.0.17-9e4879f-Linux-x86_64-bin.zip ./PharoVM.zip
 RUN set -eu; \
   unzip PharoVM.zip; \
   rm PharoVM.zip; \
