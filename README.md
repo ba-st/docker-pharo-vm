@@ -1,6 +1,6 @@
 # Docker image for Pharo VM
 
-Docker image for running a headless [Pharo VM](https://github.com/pharo-project/opensmalltalk-vm)
+Docker image for running a headless [Pharo VM](https://github.com/pharo-project/pharo-vm)
 on top of Debian 11 slim.
 
 [![Unit Tests](https://github.com/ba-st/docker-pharo-vm/actions/workflows/unit-tests.yml/badge.svg)](https://github.com/ba-st/docker-pharo-vm/actions/workflows/unit-tests.yml/badge.svg)
