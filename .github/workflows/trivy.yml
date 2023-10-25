@@ -10,6 +10,7 @@ on:
     - release-candidate
   schedule:
     - cron: '35 6 * * 2'
+  workflow_dispatch:
 
 permissions:
   contents: read
