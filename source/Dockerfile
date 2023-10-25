@@ -14,7 +14,7 @@ LABEL maintainer="Buenos Aires Smalltalk <github@fast.org.ar>"
 WORKDIR /opt/pharo
 RUN set -eu; \
   apt-get update; \
-  apt-get upgrade -y \
+  apt-get upgrade -y; \
   apt-get install --assume-yes --no-install-recommends \
     ca-certificates \
     libcurl3-gnutls \
