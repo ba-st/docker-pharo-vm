@@ -1,6 +1,6 @@
 # How to update the VM release
 
-Once a [new release](https://github.com/pharo-project/opensmalltalk-vm/releases)
+Once a [new release](https://github.com/pharo-project/pharo-vm/releases)
 of the Pharo VM was produced:
 
 - Lookup for the corresponding commit hash in the release page
