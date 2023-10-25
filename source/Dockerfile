@@ -2,14 +2,15 @@
 FROM alpine:3.12 as download-vm
 RUN apk add unzip
 WORKDIR /tmp/pharo-vm
-ADD https://files.pharo.org/vm/pharo-spur64-headless/Linux-x86_64/PharoVM-10.0.5-2757766-Linux-x86_64-bin.zip ./PharoVM.zip
+ADD https://files.pharo.org/vm/pharo-spur64-headless/Linux-x86_64/PharoVM-10.0.8-b323c5f-Linux-x86_64-bin.zip ./PharoVM.zip
+
 RUN set -eu; \
   unzip PharoVM.zip; \
   rm PharoVM.zip; \
   true
 
 # Copy VM into base image
-FROM debian:11-slim as vm
+FROM debian:12-slim as vm
 LABEL maintainer="Buenos Aires Smalltalk <github@fast.org.ar>"
 WORKDIR /opt/pharo
 RUN set -eu; \
