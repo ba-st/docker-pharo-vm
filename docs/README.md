@@ -1,7 +1,7 @@
 # Docker image for Pharo VM Documentation
 
-Docker image for running a headless [Pharo VM](https://github.com/pharo-project/opensmalltalk-vm)
-on top of Debian 11.
+Docker image for running a headless [Pharo VM](https://github.com/pharo-project/pharo-vm)
+on top of Debian 12 slim.
 
 ---
 
