@@ -13,16 +13,16 @@ FROM debian:12-slim as vm
 LABEL maintainer="Buenos Aires Smalltalk <github@fast.org.ar>"
 WORKDIR /opt/pharo
 RUN set -eu; \
-  apt-get update; \
-  apt-get upgrade -y; \
-  apt-get install --assume-yes --no-install-recommends \
+  apt update; \
+  apt upgrade --assume-yes; \
+  apt install --assume-yes --no-install-recommends \
     ca-certificates \
     libcurl3-gnutls \
     ; \
-  apt-get clean; \
+  apt clean; \
   useradd --uid 7431 --gid 100 --home-dir /opt/pharo --no-create-home --no-user-group pharo; \
   rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*; \
-  printf '#!/usr/bin/env bash\nexec /opt/pharo/vm/pharo --headless "$@"' > /opt/pharo/pharo-vm; \
+  printf '#!/usr/bin/env bash\nexec /opt/pharo/vm/pharo --headless "$@"\n' > /opt/pharo/pharo-vm; \
   ln -s /opt/pharo/pharo-vm /usr/local/bin/pharo-vm; \
   chmod a+x /usr/local/bin/pharo-vm; \
   chown 7431:100 /opt/pharo -R; \
