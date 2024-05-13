@@ -15,7 +15,7 @@ jobs:
       matrix:
         version:
           - latest
-          - v10.1.0
+          - v10.2.0
     name: Scheduled scan for vulnerabilities ${{ matrix.version }}
     runs-on: ubuntu-latest
     steps:
