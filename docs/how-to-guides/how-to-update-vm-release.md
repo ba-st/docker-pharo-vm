@@ -7,4 +7,6 @@ of the Pharo VM was produced:
 - Go to <https://files.pharo.org/vm/pharo-spur64-headless/Linux-x86_64/>
 - Locate the zip file corresponding to the commit hash. It will have a name like
   `PharoVM-{{version}}-{{commit_hash}}-Linux-x86_64-bin.zip`
+  (beware that multiple files with the same version might be available,
+  **we need the one with the commit equal to the one mentioned in the Pharo VM release**)
 - Update the `Dockerfile` in the `source` folder to download the new zip
