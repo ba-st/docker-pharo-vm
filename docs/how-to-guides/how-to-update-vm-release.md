@@ -10,3 +10,5 @@ of the Pharo VM was produced:
   (beware that multiple files with the same version might be available,
   **we need the one with the commit equal to the one mentioned in the Pharo VM release**)
 - Update the `Dockerfile` in the `source` folder to download the new zip
+- When creating a new release, the format should be **Pharo VM Version** [Current Date]
+- After creating a new release, a new branch must be created so that it can be referenced by dependent projects
