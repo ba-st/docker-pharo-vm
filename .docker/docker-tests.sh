@@ -3,10 +3,10 @@
 set -e
 
 echo "Building image"
-docker-compose -f docker-compose-test.yml build
+docker compose -f docker-compose-test.yml build
 
 echo "Starting image"
-docker-compose -f docker-compose-test.yml up
+docker compose -f docker-compose-test.yml up
 
 echo "Stopping image"
-docker-compose -f docker-compose-test.yml down
+docker compose -f docker-compose-test.yml down
