@@ -1,8 +1,8 @@
 # Download Pharo VM in a clean image
-FROM alpine:3.12 AS download-vm
+FROM alpine:3 AS download-vm
 RUN apk add unzip
 WORKDIR /tmp/pharo-vm
-ADD https://files.pharo.org/vm/pharo-spur64-headless/Linux-x86_64/PharoVM-v10.3.4%2B0.62881b7-Linux-x86_64-bin.zip ./PharoVM.zip
+ADD https://files.pharo.org/vm/pharo-spur64-headless/Linux-x86_64/PharoVM-v10.3.5%2B0.be20a02-Linux-x86_64-bin.zip ./PharoVM.zip
 RUN set -eu; \
   unzip PharoVM.zip; \
   rm PharoVM.zip; \

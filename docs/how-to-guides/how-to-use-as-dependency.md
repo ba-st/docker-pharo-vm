@@ -3,5 +3,5 @@
 In your `Dockerfile` put something like:
 
 ```dockerfile
-FROM ghcr.io/ba-st/pharo-vm:v10.2.0
+FROM ghcr.io/ba-st/pharo-vm:v10.3.5
 ```
