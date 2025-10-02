@@ -13,5 +13,5 @@ jobs:
         uses: reviewdog/action-markdownlint@v0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          fail_on_error: true
+          fail_level: warning
           reporter: github-pr-review
